@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RankingApp.Models;
+using System.Threading;
 
 namespace RankingApp.Controllers
 {
@@ -35,6 +36,7 @@ namespace RankingApp.Controllers
         public ItemModel[] Get(int itemType)
         {
             ItemModel[] items = Items.Where(i => i.ItemType == itemType).ToArray();
+            Thread.Sleep(2000);
             return items;
         }
     }

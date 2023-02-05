@@ -17,7 +17,7 @@ const AppRoutes = [
     element: <FetchData />
   },
   {
-      path: '/rank-items'
+      path: '/rank-items',
       element: <RankItems />
   }
 ];
